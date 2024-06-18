@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Train_Seat_Reservation.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>My Railway Website</title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="container">
+                <h1>My Railway Website</h1>
+                <nav>
+                    <ul>
+                        <li><asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="lnkContact" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="lnkAbout" runat="server" NavigateUrl="~/AdminLogin.aspx">Admin</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="lnkRegister" runat="server" NavigateUrl="~/Register.aspx">Register</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="lnkLogin" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
+
